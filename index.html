@@ -1,9 +1,62 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-</head>
-<body>
 
+<head>
+    <!-- Scaling default view to 1 on any devise -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!--Defining Charset-->
+    <!--html5-->
+    <meta charset="utf-8">
+    <!--HTML 4.01-->
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <!--meta keywords -->
+    <meta name="keywords" content="POCCO, Cubester, productivity ">
+    <!--meta description-->
+    <meta name="description" content="Welcome to Cubester's POCCO application! From here you can add custom message to your POCCO and set times quickly so you can be even more efficient. Follow along the tabs above to get started.">
+    <!--index/noindex - This tells the engines whether to show your page in search results or not.
+        follow/nofollow - This tells the engines what to do with links on your pages: whether they should trust and "follow" your links to the next page or not. -->
+    <meta name="robots" content="index, follow">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- Include local CSS file -->
+    <link rel="stylesheet" type="text/css" href="./CSS/main.css">
+    <!--Displays "P" Icon on the tab title-->
+    <!-- <link rel="icon" type="image/png" href="http://www.poccos.com/wp-content/uploads/fbrfg/favicon-16x16.png" sizes="16x16"> -->
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    <!-- Title of the page-tab -->
+    <title>Cubester's POCCO</title>
+</head>
+
+<body ng-app="myApp">
+    <div class="navbar navbar-default navbar-static-top">
+    <div class="container">
+    <div class="navbar-brand"><span></span></div>
+    </div>
+    </div>
+    <ul >
+            <li class="active"><a data-toggle="tab" href="#home">Cubester</a>
+            </li>
+            <li><a data-toggle="tab" href="#setTime" id="Clock">SetTime</a>
+            </li>
+            <li><a data-toggle="tab" href="#setMessage" id="Clock">SetMessage</a>
+            </li>
+            <li><a data-toggle="tab" href="#logbook" id="Clock">Logbook</a>
+            </li>
+
+
+        </ul>
+    </div>
+    <!-- Local Script files -->
+    <!-- include app.js -->
+    <script type="text/javascript" src="./scripts/app.js"></script>
+    <!--Include Angular JS (Google CDN: minified version 1.4.4)-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </body>
+
 </html>
